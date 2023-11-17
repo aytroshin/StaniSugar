@@ -6,55 +6,81 @@
    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header>
-    <div class="second">
-      <p align = "center"><b>Введите свойства жидкостей</b></p>
-    </div>
-  </header>
   <form class="" action="index.html" method="post">
-    <div class ="first">
-      <p>Плотность при 20<sup>o</sup>C, кг/м<sup>3</sup></p>
-      <div class="second">
-        <input type="number" name="dens" value="850.0">
+    <h1 align = "center">
+        Введите свойства жидкостей
+    </h1>
+    <p align = "center"> (Обязательное поле)</p>
+    <div class="form">
+      <div class="label">
+        <label>Плотность при 20<sup>o</sup>C, кг/м<sup>3</sup></label>
+        <input type="text" name="density" value="853.5" required maxlength="5">
+      </div>
+      <div class="label">
+        <label>Вязкость при 20<sup>o</sup>C, мм<sup>2</sup>/с</label>
+        <input type="text" name="viscousity" value="10.2" required maxlength="6">
+      </div>
+      <div class="label">
+        <label>Асфальтены, масс. %</label>
+        <input type="text" name="Asphaltene" value="3.2" maxlength="4" required>
+      </div>
+      <div class="label">
+        <label>Смолы, масс. %</label>
+        <input type="text" name="Gums" value="8.7" maxlength="4" required>
+      </div>
+      <div class="label">
+        <label>Парафины, масс. %</label>
+        <input type="text" name="Parafins" value="1.5" maxlength="4" required>
+      </div>
+      <div class="label">
+        <label>Плотность воды при 20<sup>o</sup>C, кг/м<sup>3</sup></label>
+        <input type="text" name="Water_density" value="1004.2" maxlength="6" required>
+      </div>
+      <div class="label">
+        <label>pH воды, ед. pH</label>
+        <input type="text" name="Water_pH" value="6.5" maxlength="3" required>
       </div>
     </div>
-    <div class ="first">
-      <p>Вязкость при 20<sup>o</sup>C, мм<sup>2</sup>/с</p>
-      <div class="second">
-        <input type="number" name="vis" value="10.0">
+    <h1 align = "center">
+        Введите технологические параметры
+    </h1>
+    <p align = "center"> (Обязательное поле)</p>
+      <div class="label">
+        <label>Начальное сдержание воды, об %</label>
+        <input class ="sub_text" type="text" name="Start_water" value="30.0" required maxlength="4">
       </div>
-    </div>
-    <div class ="first">
-      <p>Асфальтены, масс. %</p>
-      <div class="second">
-        <input type="number" name="Asph" value="4.0">
+      <div class="label">
+        <label>Конечное сдержание воды, об %</label>
+        <input type="text" name="Finish_water" value="10.0" required maxlength="4">
       </div>
-    </div>
-    <div class ="first">
-      <p>Смолы, масс. %</p>
-      <div class="second">
-        <input type="number" name="Gums" value="4.0">
+      <div class="label">
+        <label>Предполагаемый диапазон времени, мин</label>
+        <input type="text" name="Min_tme" value="40" maxlength="4" required>
+        <input type="text" name="Max_time" value="60" maxlength="4" required>
       </div>
-    </div>
-    <div class ="first">
-      <p>Парафины, масс. %</p>
-      <div class="second">
-        <input type="number" name="Paraf" value="2.0">
+      <div class="label">
+        <label>Предполагаемый диапазон температур, <sup>o</sup>C</label>
+        <input type="text" name="Min_temperature" value="10" maxlength="4" required>
+        <input type="text" name="Max_temperature" value="30" maxlength="4" required>
       </div>
-    </div>
-    <div class ="first">
-      <p>Плотность воды при 20<sup>o</sup>C, кг/м<sup>3</sup></p>
-      <div class="second">
-        <input type="number" name="Den_wat" value="2.0">
+      <div class="label">
+        <label>Предполагаемый диапазон дозировки, г/т</label>
+        <input type="text" name="Min_reagent" value="20" maxlength="4" required>
+        <input type="text" name="Max_reaget" value="40" maxlength="4" required>
       </div>
-    </div>
-    <div class ="first">
-    <p>pH воды, ед. pH</p>
-    <div class="second">
-      <input type="number" name="p" value="2.0">
-    </div>
-
+      <p align = "center"> (Результаты расчета)</p>
+      <div class="label">
+            <label>Оптимальная температура, <sup>o</sup>C</label>
+        <input type="text" name="Opt_temperature" value="" maxlength="5">
+      </div>
+      <div class="label">
+        <label>Оптимальное время, мин</label>
+        <input type="text" name="Opt_temperature" value="" maxlength="5">
+      </div>
+      <div class="button_field">
+        <button type="reset" name="Clear"> Очистить </button>
+        <button type="button" name="Calculation"> Рассчитать </button>
+      </div>
   </form>
-
 </body>
 </html>
