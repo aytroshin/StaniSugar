@@ -1,52 +1,49 @@
 body {
-opacity: 0.8;
-background-image: url('image/gradient-archipelago-of-bubble-drops-in-water.jpg');
-background-size: cover;
+  background: linear-gradient(90deg, #808080, #F4C357,#FFD700 ,#F4C357, #808080);
+  opacity: 0.8;
+  font-family: "Arial"
 }
  p {
-  font-size: 1.6em;
+  font-size: 1.8em;
 }
-
+h1 {
+  font-size: 2.2em
+}
 .label {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   border-radius: 6px;
-  background-color: #DCDCDC;
+  background-color: #AD927B;
   width: 40em;
   height: 5em;
   display: flex;
   align-items: center;
   padding-left: 15px;
-
 }
-
 
 input{
 width: 3.5em;
 height: 2em;
-font-size: 1.5em;
+font-size: 1.7em;
 margin: 0 15px 0 auto;
 }
-
 label {
   color: black;
   font-size: 2em;
 }
-
 .button_field {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   border-radius: 6px;
-  background-color: green;
+  background-color: #826A55;
   width: 40em;
   height: 5em;
   display: flex;
   align-items: center;
   padding-left: 15px;
 }
-
 button {
   margin-left: auto;
   margin-right: auto;
