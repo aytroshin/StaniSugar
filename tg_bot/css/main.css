@@ -2,6 +2,7 @@ body {
   background: linear-gradient(90deg, #808080, #F4C357,#FFD700 ,#F4C357, #808080);
   opacity: 0.8;
   font-family: "Arial"
+
 }
  p {
   font-size: 1.8em;
@@ -23,13 +24,14 @@ h1 {
 }
 
 input{
-width: 3.5em;
+width: 3.6em;
 height: 2em;
-font-size: 1.7em;
+font-size: 1.6em;
 margin: 0 15px 0 auto;
+border-radius: 4px
+color: black;
 }
 label {
-  color: black;
   font-size: 2em;
 }
 .button_field {
@@ -50,4 +52,6 @@ button {
   width: 8em;
   height: 2.5em;
   font-size: 1.5em;
+  color: black;
+  border-radius: 4px;
   }
