@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
    <meta charset="utf-8">
@@ -7,12 +7,11 @@
 </head>
 <body>
   <div>
-    <form class="" action="index.html" method="post">
-      <h1 align = "center">
+    <form method="post" id = "form">
+      <h2 align = "center">
           Введите свойства жидкостей
-      </h1>
-      <p align = "center"> (Обязательное поле)</p>
-      <div class="form">
+      </h2>
+      <div class="form_field">
         <div class="label">
           <label>Плотность при 20<sup>o</sup>C, кг/м<sup>3</sup></label>
           <input type="text" name="density" value="853.5" required maxlength="5">
@@ -42,10 +41,9 @@
           <input type="text" name="Water_pH" value="6.5" maxlength="3" required>
         </div>
       </div>
-      <h1 align = "center">
-          Введите технологические параметры
-      </h1>
-      <p align = "center"> (Обязательное поле)</p>
+      <h2 align = "center">
+          Введите содержание воды
+      </h2>
       <div class="label">
         <label>Начальное сдержание воды, об %</label>
         <input class ="sub_text" type="text" name="Start_water" value="30.0" required maxlength="4">
@@ -54,22 +52,8 @@
         <label>Конечное сдержание воды, об %</label>
         <input type="text" name="Finish_water" value="10.0" required maxlength="4">
       </div>
-      <div class="label">
-        <label>Предполагаемый диапазон времени, мин</label>
-        <input type="text" name="Min_tme" value="40" maxlength="4" required>
-        <input type="text" name="Max_time" value="60" maxlength="4" required>
-      </div>
-      <div class="label">
-        <label>Предполагаемый диапазон температур, <sup>o</sup>C</label>
-        <input type="text" name="Min_temperature" value="10" maxlength="4" required>
-        <input type="text" name="Max_temperature" value="30" maxlength="4" required>
-      </div>
-      <div class="label">
-        <label>Предполагаемый диапазон дозировки, г/т</label>
-        <input type="text" name="Min_reagent" value="20" maxlength="4" required>
-        <input type="text" name="Max_reaget" value="40" maxlength="4" required>
-      </div>
-      <p align = "center"> (Результаты расчета)</p>
+      <!-- <h2 align = "center"> -->
+        <!-- Результаты расчета</h2>
       <div class="label">
         <label>Оптимальная температура, <sup>o</sup>C</label>
         <input type="text" name="Opt_temperature" value="" maxlength="5">
@@ -78,11 +62,16 @@
         <label>Оптимальное время, мин</label>
         <input type="text" name="Opt_temperature" value="" maxlength="5">
       </div>
+      <div class="label">
+        <label>Оптимальная дозировка, г/т</label>
+        <input type="text" name="Opt_reagent" value="" maxlength="5">
+      </div> -->
       <div class="button_field">
         <button type="reset" name="Clear"> Очистить </button>
-        <button type="button" name="Calculation"> Рассчитать </button>
+        <button type="submit" name="Calculation"> Рассчитать </button>
         </div>
       </form>
+      <script src ="./h.js"> </script>
     </div>
 </body>
 </html>
