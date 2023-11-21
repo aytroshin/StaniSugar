@@ -67,8 +67,8 @@
         <input type="text" name="Opt_reagent" value="" maxlength="5">
       </div> -->
       <div class="button_field">
-        <button type="reset" name="Clear"> Очистить </button>
-        <button type="click" name="Calculation"> Рассчитать </button>
+        <button type="reset" id="reset"> Очистить </button>
+        <button id="calc"> Рассчитать </button>
         </div>
       </form>
 <!--      <script src ="./h.js"> </script>-->
@@ -76,7 +76,7 @@
    <script src="https://telegram.org/js/telegram-web-app.js"></script>
    <script>
       let tg = window.Telegram.WebApp;
-      let form = document.getElementById('form');
+      let form = document.getElementById('calc');
       tg.expand()
       form.addEventListener("click", () => {
          let den = document.getElementByID('density').value;
