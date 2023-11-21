@@ -20,7 +20,7 @@ h1 {
   margin-right: auto;
   margin-top: 14px;
   border-radius: 4px;
-  background-color: #B39820;
+  /* background-color: #B39820; */
   width: 50em;
   height: 5em;
   display: flex;
@@ -56,11 +56,11 @@ button {
   width: 8em;
   height: 2.4em;
   font-size: 1.8em;
-  background: var(--tg-theme-button-color);
-  color: var(--tg-theme-button-text-color);
+  background:var(--tg-theme-button-text-color) ;
+  color: var(--tg-theme-button-color);
   border-radius: 4px;
   }
-  
+
   button:hover {
     background: var(--tg-theme-secondary-bg-color);
   }
