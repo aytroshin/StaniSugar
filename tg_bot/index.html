@@ -71,12 +71,22 @@
         <button type="submit" name="Calculation"> Рассчитать </button>
         </div>
       </form>
-      <script src ="./h.js"> </script>
+<!--      <script src ="./h.js"> </script>-->
    </div>
    <script src="https://telegram.org/js/telegram-web-app.js"></script>
    <script>
-      let tg = window.Telegram.WebApp
-      form = getElementByID(
+      let tg = window.Telegram.WebApp;
+      let form = getElementByID('form');
+      tg.expand()
+      form.addEventListener('submit' =>{
+         const fields = document.querySelectorAll('input');
+         const values = {};
+         fields.forEach(field => {
+           const {name, value} = field;
+           values[name] = value;
+         tg.sendData(JSON.stringify(values));
+         tg.close()
+      });
    </script>
 </body>
 </html>
