@@ -1,7 +1,7 @@
 body {
 /*   background: linear-gradient(90deg, #808080, #F4C357,#FFD700 ,#F4C357, #808080); */
   background: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color)
+  color: var(--tg-theme-text-color);
   opacity: 0.8;
   font-family: "Arial"
 
@@ -41,7 +41,7 @@ label {
   margin-right: auto;
   margin-top: 10px;
   border-radius: 6px;
-  background-color: #826A55;
+  background-color: var(--tg-theme-button-color);
   width: 35em;
   height: 4em;
   display: flex;
@@ -54,6 +54,6 @@ button {
   width: 8em;
   height: 2.4em;
   font-size: 1.3em;
-  color: black;
+  color: var(--tg-theme-button-text-color);
   border-radius: 4px;
   }
