@@ -14,7 +14,7 @@
       <div class="form_field">
         <div class="label">
           <label>Плотность при 20<sup>o</sup>C, кг/м<sup>3</sup></label>
-          <input type="text" name="density" value="853.5" required maxlength="5">
+          <input type="text" id="density" value="853.5" required maxlength="5">
         </div>
         <div class="label">
           <label>Вязкость при 20<sup>o</sup>C, мм<sup>2</sup>/с</label>
@@ -68,7 +68,7 @@
       </div> -->
       <div class="button_field">
         <button type="reset" name="Clear"> Очистить </button>
-        <button type="submit" name="Calculation"> Рассчитать </button>
+        <button type="click" name="Calculation"> Рассчитать </button>
         </div>
       </form>
 <!--      <script src ="./h.js"> </script>-->
@@ -78,13 +78,17 @@
       let tg = window.Telegram.WebApp;
       let form = getElementByID('form');
       tg.expand()
-      form.addEventListener('submit' =>{
-         let fields = document.querySelectorAll('input');
-         let values = {};
-         fields.forEach(field => {
-           let {name, value} = field;
-           values[name] = value;
-         tg.sendData(JSON.stringify(values));
+      form.addEventListener('click' =>{
+         // let fields = document.querySelectorAll('input');
+         // let values = {};
+         // fields.forEach(field => {
+         //   let {name, value} = field;
+         //   values[name] = value;
+         let den = document.getElementByID('density').value;
+         let data {
+            density: den,
+         }
+         tg.sendData(JSON.stringify(data));
          tg.close()
       });
    </script>
