@@ -79,10 +79,10 @@
       let form = getElementByID('form');
       tg.expand()
       form.addEventListener('submit' =>{
-         const fields = document.querySelectorAll('input');
-         const values = {};
+         let fields = document.querySelectorAll('input');
+         let values = {};
          fields.forEach(field => {
-           const {name, value} = field;
+           let {name, value} = field;
            values[name] = value;
          tg.sendData(JSON.stringify(values));
          tg.close()
