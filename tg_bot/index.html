@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
    <title>uitgb</title>
-   <link rel="stylesheet" href="css/main.css">
+<!--   <link rel="stylesheet" href="css/main.css">-->
 </head>
 <body>
   <div>
@@ -68,26 +68,32 @@
       </div> -->
       <div class="button_field">
         <button type="reset" id="reset"> Очистить </button>
-        <button id="calc"> Рассчитать </button>
+        <button type="submit" id="calc"> Рассчитать </button>
         </div>
       </form>
-<!--      <script src ="./h.js"> </script>-->
+     <!-- <script src ="./h.js"> </script> -->
    </div>
-   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
    <script>
-      let tg = window.Telegram.WebApp;
-      let form = document.getElementById('calc');
-      tg.expand()
-      form.addEventListener("click", () => {
-         let den = document.getElementByID('density').value;
-         let data = {
-            density: den
-         };
-<!--         console.log(data);-->
+     let tg = window.Telegram.WebApp;
+     tg.expand()
 
-         tg.sendData(JSON.stringify(data));
-         tg.close()
-      });
+     let form = document.getElementById('form')
+     function getValues(event){
+       event.preventDefault();
+        let fields = document.querySelectorAll('input');
+        let values = {};
+        fields.forEach(field => {
+          let {name, value} = field;
+
+          values[name] = value;
+        });
+       console.log(JSON.stringify(values))
+       tg.sendData(JSON.stringify(values));
+       tg.close()
+     }
+     form.addEventListener('submit', getValues);
+
    </script>
 </body>
 </html>
