@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 3em;
   color: #28281F;
 }
 
@@ -35,12 +35,12 @@ h1 {
 input{
 width: 5em;
 height: 1.5em;
-font-size: 3.5em;
+font-size: 1.7em;
 margin: 0 15px 0 auto;
 border-radius: 12px
 }
 label {
-  font-size: 3.5em;
+  font-size: 1.7em;
 }
 .button_field {
   margin-left: auto;
@@ -59,7 +59,7 @@ button {
   margin-right: auto;
   width: 10em;
   height: 2em;
-  font-size: 3.5em;
+  font-size: 1.7em;
   border-radius: 12px;
 
   }
