@@ -10,13 +10,13 @@
     <h1 align = "center">
       Введите свойства жидкостей
     </h1>
-    <form method="post" id="form" name="form">
+    <form method="post" id="form" name="form" onsubmit="check(event);">
       <div>
         <div class="label">
           <label>Плотность при 20<sup>o</sup>C, кг/м<sup>3</sup></label>
-          <input type="text" name="density" placeholder="853,5" minlength="5" maxlength="5" required>
+          <input type="text" name="density" placeholder="853,5" minlength="3" maxlength="6" required>
         </div>
-        <div class="label">
+        <!-- <div class="label">
           <label>Вязкость при 20<sup>o</sup>C, мм<sup>2</sup>/с</label>
           <input type="text" name="viscousity" placeholder="10,2" minlength="6" maxlength="6" required>
         </div>
@@ -47,16 +47,16 @@
         <div class="label">
           <label>Конечное сдержание воды, об %</label>
           <input type="text" name="Finish_water" placeholder="10,0" minlength="4" maxlength="4" required >
-        </div>
+        </div> -->
         <div class="button_field">
           <button type="reset" id="reset"> Очистить </button>
           <button type="submit" id="calc"> Рассчитать </button>
         </div>
       </div>
     </form>
-     <!-- <script src ="./h.js"> </script> -->
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="./check.js"></script>
+  <!-- <script>
     let tg = window.Telegram.WebApp;
     tg.expand()
     let form = document.getElementById('form')
@@ -75,6 +75,6 @@
      }
      form.addEventListener('submit', getValues);
 
-   </script>
+   </script> -->
 </body>
 </html>
