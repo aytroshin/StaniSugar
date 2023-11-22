@@ -25,8 +25,8 @@ h1 {
   /* border: solid; */
   border-radius: 12px;
   background-color: #333333;
-  width: 40em;
-  height: 2em;
+  width: 37em;
+  height: 3em;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -38,7 +38,8 @@ width: 4em;
 height: 1.5em;
 font-size: 1.7em;
 margin: 0 15px 0 auto;
-border-radius: 12px
+border-radius: 12px;
+  border: 0;
 }
 label {
   font-size: 1.7em;
@@ -47,8 +48,8 @@ label {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  width: 40em;
-  height: 2em;
+  width: 37em;
+  height: 3em;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -57,11 +58,11 @@ label {
 button {
   margin-left: auto;
   margin-right: auto;
-  width: 5em;
+  width: 6em;
   height: 2em;
   font-size: 1.7em;
   border-radius: 12px;
-  background-color: #179CDE; 
+  background-color: #179CDE;
 
   }
 
