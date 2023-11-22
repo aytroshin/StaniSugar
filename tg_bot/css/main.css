@@ -14,8 +14,9 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 20px;
   color: #28281F;
+  margin-top: 20px;
 }
 
 .label {
@@ -25,8 +26,8 @@ h1 {
   /* border: solid; */
   border-radius: 12px;
   background-color: #333333;
-  width: 37em;
-  height: 5em;
+  width: 500px;
+  height: 50px;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -34,22 +35,22 @@ h1 {
 
 
 input{
-width: 4em;
-height: 1.5em;
-font-size: 2em;
+width: 80px;
+height: 40px;
+font-size: 20px;
 margin: 0 15px 0 auto;
 border-radius: 12px;
   border: 0;
 }
 label {
-  font-size: 2em;
+  font-size: 20px;
 }
 .button_field {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  width: 37em;
-  height: 5em;
+  width: 500px;
+  height: 50px;
   display: flex;
   align-items: center;
   padding-left: 15px;
@@ -58,11 +59,13 @@ label {
 button {
   margin-left: auto;
   margin-right: auto;
-  width: 6em;
-  height: 5em;
-  font-size: 2em;
+  width: 130px;
+  height: 50px;
+  font-size: 20px;
   border-radius: 12px;
   background-color: #179CDE;
+  color: white;
+  border: 0;
 
   }
 
