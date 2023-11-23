@@ -59,7 +59,7 @@ function getValues(event){
     return;
   }
   if (values['Start_water'].replace(/,/, ".") > 30 || values['Start_water'].replace(/,/, ".") < 0.5)  {
-    alert("Введите начальное одержание воды от 0,5 до 30,0 % об.");
+    alert("Введите конечное одержание воды от 0,5 до 30,0 % об.");
     let fin_w = document.getElementById("Start_water");
     fin_w.focus();
     return;
